@@ -5,5 +5,7 @@ I had to change some things in frontend and backend because of the newer version
 This was my first time working with FastAPI.
 
 References:
+
 FARM Stack Course - FastAPI, React, MongoDB - https://www.youtube.com/watch?v=OzUzrs8uJl8
+
 FARM-Stack-Course - https://github.com/BekBrace/FARM-Stack-Course
