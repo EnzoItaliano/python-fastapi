@@ -1,9 +1,15 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
+url = os.environ.get('DATABASE_URL')
+
 from model import Todo
 
 import asyncio
 import motor.motor_asyncio
 
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://team2:team2@cluster0.uf2gw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+client = motor.motor_asyncio.AsyncIOMotorClient(url)
 client.get_io_loop = asyncio.get_running_loop
 database = client.TodoList
 collection = database.todo
